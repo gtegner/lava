@@ -1,13 +1,15 @@
 
-# Reducing Variance in Meta-Learning via Laplace Approximation for Regression Tasks (LAVA)
-This repository contains the implementation for "Reducing Variance in Meta-Learning via Laplace Approximation for Regression Tasks". 
+# 🌋 Reducing Variance in Meta-Learning via Laplace Approximation for Regression Tasks (LAVA)
+This repository contains a minimal implementation of "Reducing Variance in Meta-Learning via Laplace Approximation for Regression Tasks". 
+
+***Authors***: Alfredo Reichlin*, Gustaf Tegnér*, Miguel Vasco, Hang Yin, Mårten Björkman, and Danica Kragic
 
 <center>
 <img src="lava.png" alt="Description of image" width="600" height="auto"/>
 </center>
 
 
-## Setup
+## Installation
 
 The codebase is implemented in Python 3.9. You can install the required dependencies using the following command:
 
@@ -48,3 +50,15 @@ After running experiments, evaluation results are saved in the `checkpoints/{mod
 results_test.pkl: Contains the results of testing the model.
 results_train.pkl: Contains the results from the training phase.
 The model results are also saved in the tensorboard directory
+
+
+## Citation
+If you find this repository useful, please consider citing our work:
+```
+@article{reichlin2024lava,
+  title={Reducing Variance in Meta-Learning via Laplace Approximation for Regression Tasks},
+  author={Reichlin, Alfredo. and Tegnér, Gustaf and Vasco, Miguel and Yin, Hang and Björkman, Mårten and Kragic, Danica},
+  journal={Transactions of Machine Learning Research (TMLR)},
+  year={2024}
+}
+```
