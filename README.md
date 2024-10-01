@@ -46,10 +46,7 @@ python main.py --model-name readme --dataset sine --model lava --steps 1 --adapt
 ```
 
 ## Evaluation
-After running experiments, evaluation results are saved in the `checkpoints/{model_name}` directory. Each model's directory contains two files:
-results_test.pkl: Contains the results of testing the model.
-results_train.pkl: Contains the results from the training phase.
-The model results are also saved in the tensorboard directory
+After running experiments, evaluation results are saved in the `checkpoints/{model_name}` directory. Each model's directory contains `results_train.pkl` and `results_test.pkl` which contain the training and testing results respectively. The metrics are also logged in the tensorboard directory `tensorboard/{dataset}` by default.
 
 
 ## Citation
