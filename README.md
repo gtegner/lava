@@ -57,7 +57,7 @@ If you find this repository useful, please consider citing our work:
 ```
 @article{reichlin2024lava,
   title={Reducing Variance in Meta-Learning via Laplace Approximation for Regression Tasks},
-  author={Reichlin, Alfredo. and Tegnér, Gustaf and Vasco, Miguel and Yin, Hang and Björkman, Mårten and Kragic, Danica},
+  author={Reichlin, Alfredo and Tegnér, Gustaf and Vasco, Miguel and Yin, Hang and Björkman, Mårten and Kragic, Danica},
   journal={Transactions of Machine Learning Research (TMLR)},
   year={2024}
 }
