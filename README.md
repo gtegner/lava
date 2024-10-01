@@ -34,7 +34,7 @@ steps: Number of steps to perform in the inner-loop update
 
 adaptation: One of ['full', 'conditional', 'head'] which considers updating all parameters (MAML), using conditioning (CAVIA) or only updated the last layer (ANIL). Currently LAVA does not suppport the adaptation over the full parameters.
 
-context-dim: Dimensions to using conditioning (adaptation == 'conditional'), ignored otherwise
+context-dim: Dimensions when using conditioning (adaptation == 'conditional'), ignored otherwise
 
 support-size: Number of samples in the support-data
 ```

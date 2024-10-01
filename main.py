@@ -44,8 +44,6 @@ parser.add_argument('--steps', type=int, default=3)
 parser.add_argument('--adaptation', type=str, default='full')
 parser.add_argument('--use-trajectory', type=int, default=0)
 
-parser.add_argument('--num-frequency', type=int, default=10)
-
 args = parser.parse_args()
 
 
