@@ -22,11 +22,11 @@ To train a model, variations of the following command is used:
 
 An explanation of the parameters follows below:
 ```
-model-name: prefix of the directory to save the model
+model-name: prefix of the directory to save the model. By default, models are saved in the `checkpoints/{model_name}` directory.
 
-dataset: one of [mass-spring, fitz, vanderpol, pendulum, sine]
+dataset: [mass-spring, fitz, vanderpol, pendulum, sine]
 
-model: one of ['lava', 'maml', 'vr-maml', 'metamix', 'vfml', 'llama']
+model: ['lava', 'maml', 'vr-maml', 'metamix', 'vfml', 'llama']
 
 steps: Number of steps to perform in the inner-loop update
 
