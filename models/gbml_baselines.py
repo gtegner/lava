@@ -6,7 +6,7 @@ from models.base_models import LastLayerNet
 from torch.autograd.functional import hessian as f_hessian
 import copy
 import numpy as np
-        
+ 
 
 
 class MAMLOptimizer(nn.Module):
@@ -264,7 +264,12 @@ class LAVA(nn.Module):
         super().__init__()
         self.model = model
         self.steps = steps
-        self.theta0 = nn.Parameter(model.initialization)
+
+        if model.adaptation == 'full':
+            raise NotImplementedError("Lava not implemented for full adaptation")
+        else:
+            self.theta0 = nn.Parameter(model.initialization)
+
         self.context_dim = self.model.num_params
 
         self.reg = 0.1

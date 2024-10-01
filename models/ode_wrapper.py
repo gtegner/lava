@@ -8,8 +8,8 @@ class ODEWrapper(nn.Module):
         super().__init__()
         self.vector_field = model
         self.num_params = self.vector_field.num_params
+        self.adaptation = self.vector_field.adaptation
 
-        #self.input_dim = self.vector_field.input_dim
         self.input_dim = 1
         self.output_dim = self.vector_field.output_dim
 

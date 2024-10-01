@@ -1,1 +1,1 @@
-python main.py --model-name submission --dataset sine --model  --steps 1 --epochs 200 --noise-std 0.0 --adaptation full --context-dim 2 --support-size 10 --num-params 50
+python main.py --model-name submission --dataset sine --model lava --steps 1 --epochs 200 --noise-std 0.0 --adaptation head --context-dim 2 --support-size 10 --num-params 50

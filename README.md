@@ -23,11 +23,17 @@ To train a model, variations of the following command is used:
 An explanation of the parameters follows below:
 ```
 model-name: prefix of the directory to save the model
+
 dataset: one of [mass-spring, fitz, vanderpol, pendulum, sine]
+
 model: one of ['lava', 'maml', 'vr-maml', 'metamix', 'vfml', 'llama']
+
 steps: Number of steps to perform in the inner-loop update
-adaptation: One of ['full', 'conditional', 'head'] which considers updating all parameters (MAML), using conditioning (CAVIA) or only updated the last layer (ANIL)
+
+adaptation: One of ['full', 'conditional', 'head'] which considers updating all parameters (MAML), using conditioning (CAVIA) or only updated the last layer (ANIL). Currently LAVA does not suppport the adaptation over the full parameters.
+
 context-dim: Dimensions to using conditioning (adaptation == 'conditional'), ignored otherwise
+
 support-size: Number of samples in the support-data
 ```
 

@@ -33,6 +33,7 @@ class VectorField(nn.Module):
         self.input_dim = input_dim
         self.output_dim = output_dim
         self.feature_extractor = feature_extractor
+        self.adaptation = adaptation
 
         self.main_net = MainNetwork(input_dim, output_dim, context_dim, adaptation, feature_extractor=feature_extractor)
         self.num_params = self.main_net.num_params
