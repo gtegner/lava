@@ -52,10 +52,13 @@ After running experiments, evaluation results are saved in the `checkpoints/{mod
 ## Citation
 If you find this repository useful, please consider citing our work:
 ```
-@article{reichlin2024lava,
-  title={Reducing Variance in Meta-Learning via Laplace Approximation for Regression Tasks},
-  author={Reichlin, Alfredo and Tegnér, Gustaf and Vasco, Miguel and Yin, Hang and Björkman, Mårten and Kragic, Danica},
-  journal={Transactions of Machine Learning Research (TMLR)},
-  year={2024}
+@misc{reichlin2024reducingvariancemetalearninglaplace,
+      title={Reducing Variance in Meta-Learning via Laplace Approximation for Regression Tasks}, 
+      author={Alfredo Reichlin and Gustaf Tegnér and Miguel Vasco and Hang Yin and Mårten Björkman and Danica Kragic},
+      year={2024},
+      eprint={2410.01476},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2410.01476}, 
 }
 ```
